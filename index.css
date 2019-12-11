@@ -27,6 +27,10 @@ li::before {
   padding-right: 1em;
 }
 
+.row {
+  margin: 20px 30px;
+}
+
 .hc-logo {
   width: 88%;
 }
@@ -83,10 +87,15 @@ li::before {
 .section-header {
   color: #007dc3;
   font-size: 1.7em;
+  font-size: ;
 }
 
 .hc-logo-ball {
   width: 10%;
+}
+
+#www-logo-ball {
+  width: 6%;
 }
 
 .about-us-row {
@@ -100,10 +109,6 @@ li::before {
 
 .about-us-text {
   /* border: 2px solid red; */
-}
-
-.row {
-  margin: 30px 30px;
 }
 
 .our-solutions-text {
@@ -123,6 +128,25 @@ li::before {
 
 .our-solutions-footer p {
   margin-bottom: 6px;
+}
+
+.www-text {
+  text-align: center;
+}
+
+.www-panel-row {
+  background-image: url("./images/Background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 500px;
+  /* background: #ccc; */
+}
+
+.www-card {
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid red; */
 }
 
 /*Tablet Styling*/
@@ -160,6 +184,10 @@ li::before {
 
   .banner-description {
     font-size: 0.9em;
+  }
+
+  .about-us-text .our-solutions-text {
+    font-size: 0.75em;
   }
 }
 
