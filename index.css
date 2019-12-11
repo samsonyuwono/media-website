@@ -1,8 +1,13 @@
 body {
-  margin: 30px;
+  /* margin: 0px; */
 }
+
 h1 {
-  color: red;
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .hc-logo {
@@ -21,24 +26,122 @@ h1 {
   justify-content: space-around;
 }
 
+.header-logos {
+  display: flex;
+  flex-direction: row;
+}
+
 .top-bar-col p {
   margin: 0;
 }
 
+.banner-img {
+  width: 100%;
+}
+
+.banner-img-col {
+  border: 2px solid red;
+}
+
+.banner-text {
+  margin-top: 30px;
+}
+
+.banner-text {
+  color: white;
+  position: absolute;
+  top: 40%;
+  width: 50%;
+  margin: 0px 0 0 20px;
+}
+
+.banner-text h1 {
+  font-size: 3em;
+}
+
+.banner-description {
+  margin-top: 30px;
+}
+
 /*Tablet Styling*/
 @media only screen and (max-device-width: 1366px) {
+  .banner-text {
+    top: 13%;
+  }
+
+  .banner-text h1 {
+    font-size: 2.8em;
+  }
 }
 
 @media only screen and (max-device-width: 1366px) and (orientation: portrait) and (min-device-width: 768px) and (orientation: portrait) {
   .top-bar-col {
     flex-direction: column;
   }
+
+  .top-bar-col {
+    flex-direction: column;
+  }
+  .banner-text h1 {
+    font-size: 2.2em;
+  }
+  .banner-description {
+    font-size: 0.9em;
+  }
 }
 
 /*Phone Styling*/
 @media screen and (max-device-width: 767px), (max-device-height: 375px) {
+  .top-bar-col {
+    flex-direction: column;
+  }
+
+  .banner-description {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (max-device-width: 767px) and (orientation: portrait),
   (max-device-height: 375px) and (orientation: portrait) {
+  .banner-text {
+    width: 60%;
+    top: 8%;
+  }
+
+  .banner-text h1 {
+    font-size: 1em;
+  }
+
+  .banner-description {
+    margin-top: 0px;
+    font-size: 7px;
+  }
 }
+
+/* @media (max-device-width: 576px) {
+}
+
+@media (max-device-width: 768px) {
+}
+
+@media (max-device-width: 992px) {
+  .top-bar-col {
+    flex-direction: column;
+  }
+
+  .top-bar-col {
+    flex-direction: column;
+  }
+  .banner-text h1 {
+    font-size: 2em;
+  }
+  .banner-text {
+    top: 13%;
+  }
+}
+
+@media (max-device-width: 1200px) {
+  .top-bar-col {
+    flex-direction: column;
+  }
+} */
