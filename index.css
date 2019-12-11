@@ -10,6 +10,23 @@ p {
   font-family: "Nunito Sans", sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+
+li::before {
+  content: "• ";
+  color: #007dc3;
+  width: 1em;
+  margin-left: -1em;
+  padding-right: 1em;
+}
+
 .hc-logo {
   width: 88%;
 }
@@ -63,6 +80,15 @@ p {
   margin-top: 30px;
 }
 
+.section-header {
+  color: #007dc3;
+  font-size: 1.7em;
+}
+
+.hc-logo-ball {
+  width: 10%;
+}
+
 .about-us-row {
   margin-top: 80px;
 }
@@ -76,25 +102,27 @@ p {
   /* border: 2px solid red; */
 }
 
-.about-us-list {
+.row {
+  margin: 30px 30px;
+}
+
+.our-solutions-text {
   margin-top: 30px;
 }
 
-ul {
-  list-style-type: none;
+.our-solutions-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-li {
-  padding-left: 1em;
-  text-indent: -0.7em;
+.our-solutions-footer {
+  margin-top: 30px;
+  font-size: 0.8em;
 }
 
-li::before {
-  content: "• ";
-  color: #007dc3;
-  width: 1em;
-  margin-left: -1em;
-  padding-right: 1em;
+.our-solutions-footer p {
+  margin-bottom: 6px;
 }
 
 /*Tablet Styling*/
