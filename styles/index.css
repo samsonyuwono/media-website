@@ -144,6 +144,16 @@ a:hover {
   text-align: center;
 }
 
+.center h1 {
+  margin-bottom: 30px;
+}
+
+.left {
+  width: 68%;
+  text-align: left;
+  margin: 0 auto;
+}
+
 .www-panel-row,
 .value-prop-row,
 .physician-network-row,
@@ -191,7 +201,7 @@ a:hover {
 .client-value-row,
 .pld-row,
 .reporting-row {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 /* news */
 
@@ -256,6 +266,10 @@ a:hover {
   width: 68%;
 }
 
+.pld-text {
+  font-size: 1.2em;
+}
+
 .reporting-row {
   margin: 0 auto;
   width: 75%;
@@ -269,6 +283,10 @@ a:hover {
 }
 
 /* end client value */
+
+.our-partners-row {
+  font-size: 1.3em;
+}
 
 /*Tablet Styling*/
 @media only screen and (max-device-width: 1366px) {
