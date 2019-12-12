@@ -27,6 +27,10 @@ li::before {
   padding-right: 1em;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .row {
   margin: 50px 30px;
   padding: 20px 0;
@@ -96,7 +100,7 @@ li::before {
 }
 
 .hc-logo-ball {
-  width: 10%;
+  width: 6em;
 }
 
 #www-logo-ball {
@@ -128,13 +132,16 @@ li::before {
   margin-bottom: 6px;
 }
 
-.www-text {
+.www-text,
+.case-studies-header,
+.news-title {
   text-align: center;
 }
 
 .www-panel-row,
 .value-prop-row,
-.physician-network-row {
+.physician-network-row,
+.case-studies-description {
   background-image: url("../images/Background-1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -172,9 +179,48 @@ li::before {
   font-weight: 600;
 }
 
-.survey-paragraph a:hover {
-  text-decoration: none;
+.case-studies-row,
+.case-studies-description,
+.news-title-row,
+.news-banner-row {
+  margin: 10px 0;
 }
+/* news */
+
+.mobile-news-banner {
+  display: none;
+}
+
+.link-col {
+  border: 2px solid red;
+  /* background: white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.link-img {
+  width: 49%;
+}
+
+.link-text {
+  /* border: 2px solid red; */
+  padding-left: 0.7em;
+}
+
+.new-links {
+  border: 2px solid red;
+  margin: 40px 0px;
+  background: light-grey;
+}
+
+.arrow-right {
+  width: 10%;
+  margin-left: 0.5em;
+}
+
+/* end news */
 
 /*Tablet Styling*/
 @media only screen and (max-device-width: 1366px) {
@@ -236,6 +282,14 @@ li::before {
 
   .value-prop-chart {
     height: 150px;
+  }
+
+  .news-banner-row {
+    display: none;
+  }
+
+  .mobile-news-banner {
+    display: block;
   }
 }
 
