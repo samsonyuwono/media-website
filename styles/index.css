@@ -28,7 +28,7 @@ li::before {
 }
 
 .row {
-  margin: 20px 30px;
+  margin: 30px 30px;
 }
 
 .hc-logo {
@@ -87,7 +87,7 @@ li::before {
 .section-header {
   color: #007dc3;
   font-size: 1.7em;
-  font-size: ;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .hc-logo-ball {
@@ -134,12 +134,13 @@ li::before {
   text-align: center;
 }
 
-.www-panel-row {
-  background-image: url("./images/Background-1.jpg");
+.www-panel-row,
+.value-prop-row {
+  background-image: url("../images/Background-1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: center;
-  height: 500px;
+  height: auto;
+  background-position: center; /* Center the image *
   /* background: #ccc; */
 }
 
@@ -147,6 +148,19 @@ li::before {
   width: 100%;
   text-align: center;
   /* border: 2px solid red; */
+}
+
+.value-prop-chart {
+  width: 100%;
+  /* height: 288px; */
+}
+
+.value-prop-text {
+  padding-left: 1em;
+}
+
+.value-prop-text p {
+  margin-top: 35px;
 }
 
 /*Tablet Styling*/
@@ -205,6 +219,10 @@ li::before {
   .banner-description {
     margin-top: 0px;
     font-size: 7px;
+  }
+
+  .value-prop-chart {
+    height: 150px;
   }
 }
 
