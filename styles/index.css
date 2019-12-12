@@ -132,16 +132,22 @@ a:hover {
   margin-bottom: 6px;
 }
 
-.www-text,
+/* .www-text,
 .case-studies-header,
-.news-title {
+.news-title,
+.client-value-header,
+.client-value-text {
+  text-align: center;
+} */
+
+.center {
   text-align: center;
 }
 
 .www-panel-row,
 .value-prop-row,
 .physician-network-row,
-.case-studies-description {
+.case-studies-row {
   background-image: url("../images/Background-1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -181,8 +187,10 @@ a:hover {
 
 .case-studies-row,
 .case-studies-description,
-.news-title-row,
-.news-banner-row {
+.news-row,
+.client-value-row,
+.pld-row,
+.reporting-row {
   margin: 10px 0;
 }
 /* news */
@@ -192,12 +200,14 @@ a:hover {
 }
 
 .link-col {
-  border: 2px solid red;
-  /* background: white; */
+  background: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 10px;
+  flex: 0 0 31.333333%;
+  max-width: 31.333333%;
+  margin: 0 6px;
+  padding: 5px 0px;
+  box-shadow: 6px 0px 14px -3px grey;
 }
 
 .link-img {
@@ -209,18 +219,56 @@ a:hover {
   padding-left: 0.7em;
 }
 
-.new-links {
-  border: 2px solid red;
-  margin: 40px 0px;
-  background: light-grey;
+.link-text p {
+  font-size: 0.75em;
+  font-weight: 600;
+}
+
+.news-links {
+}
+
+.read-more-link {
+  font-size: 0.6em;
 }
 
 .arrow-right {
-  width: 10%;
+  width: 8%;
+  margin-top: 0.2em;
   margin-left: 0.5em;
 }
 
 /* end news */
+
+/* client value */
+.client-value-text {
+  width: 68%;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+
+.blue {
+  color: #007dc3;
+  font-size: 1.9em;
+}
+
+.pld-row {
+  margin: 0 auto;
+  width: 68%;
+}
+
+.reporting-row {
+  margin: 0 auto;
+  width: 75%;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.reporting-footer {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* end client value */
 
 /*Tablet Styling*/
 @media only screen and (max-device-width: 1366px) {
@@ -290,6 +338,20 @@ a:hover {
 
   .mobile-news-banner {
     display: block;
+    margin: 0px 0px;
+  }
+
+  .link-col {
+    flex: unset;
+    max-width: unset;
+    margin: 12px 6px;
+  }
+
+  .news-links {
+    margin: 0;
+  }
+  .link-img {
+    width: 35%;
   }
 }
 
