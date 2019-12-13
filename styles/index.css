@@ -1,5 +1,5 @@
 body {
-  /* margin: 0px; */
+  margin: 0px;
 }
 
 h1 {
@@ -31,8 +31,26 @@ a:hover {
   text-decoration: none;
 }
 
+input::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff !important;
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff !important;
+}
+
+input:-ms-input-placeholder {
+  color: #fff !important;
+}
+
 .row {
-  margin: 50px 30px;
+  margin: 50px 15px;
   padding: 20px 0;
 }
 
@@ -43,6 +61,7 @@ a:hover {
 .top-bar {
   font-size: 0.8em;
   font-weight: 500;
+  margin: 0px 15px;
 }
 
 .top-bar-col {
@@ -59,6 +78,11 @@ a:hover {
 
 .top-bar-col p {
   margin: 0;
+}
+
+.banner-row {
+  margin: 0px -15px;
+  padding: 6px 0;
 }
 
 .banner-img {
@@ -132,19 +156,7 @@ a:hover {
   margin-bottom: 6px;
 }
 
-/* .www-text,
-.case-studies-header,
-.news-title,
-.client-value-header,
-.client-value-text {
-  text-align: center;
-} */
-
-.center {
-  text-align: center;
-}
-
-.center h1 {
+.text-center h1 {
   margin-bottom: 30px;
 }
 
@@ -355,22 +367,67 @@ a:hover {
   font-weight: 700;
 }
 
-.testimonials-row-2 {
-  text-align: center;
-}
-
-#testimonals-quoter-3 {
-  text-align: center;
-}
-
 .our-partners-row {
   font-size: 1.3em;
 }
 
-.page-footer {
+.card-footer {
+  font-family: "Nunito Sans", sans-serif;
   background: #007dc3;
-  color: white;
+  color: #fff;
   width: 100%;
+}
+
+.footer-row {
+  padding-bottom: 5rem;
+}
+
+.footer-info p {
+  margin-bottom: 0px;
+}
+
+.border-right {
+  border-right: 1px solid black;
+}
+
+/* .footer-row > div {
+  border: 1px solid grey;
+} */
+
+.footer-column-1 {
+  font-size: 0.8em;
+}
+
+.footer-copyright {
+  font-size: 0.75em;
+}
+
+.footer-subscribe {
+  border: 1px solid white;
+}
+
+.form-control {
+  height: 40px;
+  background: #007dc3;
+  color: #fff;
+  border-color: #ffffff;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #243c4f;
+}
+.btn {
+  min-height: 40px;
+  border-radius: 0;
+  background: #fff;
+  color: #007dc3;
+  font-weight: 600;
+}
+
+.btn:hover {
+  color: #007dc3;
 }
 
 /*Tablet Styling*/
@@ -381,6 +438,14 @@ a:hover {
 
   .banner-text h1 {
     font-size: 2.2em;
+  }
+
+  .top-bar img {
+    margin-right: 1em;
+  }
+
+  .footer-column-1 {
+    font-size: 0.7em;
   }
 }
 
@@ -417,6 +482,9 @@ a:hover {
 
 @media screen and (max-device-width: 767px) and (orientation: portrait),
   (max-device-height: 375px) and (orientation: portrait) {
+  .top-bar-col {
+    margin: 5px 0px;
+  }
   .banner-text {
     width: 60%;
     top: 8%;
