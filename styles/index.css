@@ -195,13 +195,17 @@ a:hover {
   font-weight: 600;
 }
 
-.case-studies-row,
-.case-studies-description,
 .news-row,
 .client-value-row,
 .pld-row,
-.reporting-row {
+.reporting-row,
+.testimonials-row {
   margin: 20px 0;
+}
+
+.case-studies-row,
+.case-studies-header {
+  margin: 0;
 }
 /* news */
 
@@ -277,6 +281,20 @@ a:hover {
   font-weight: 700;
 }
 
+.reporting-quote {
+  position: absolute;
+  width: 10%;
+}
+
+.left-quote {
+  left: -10%;
+  top: 0%;
+}
+
+.right-quote {
+  right: -4%;
+}
+
 .reporting-footer {
   font-size: 1.2em;
   text-align: center;
@@ -284,8 +302,75 @@ a:hover {
 
 /* end client value */
 
+.testimonials-blurb-1,
+.testimonials-blurb-2 {
+  width: 80%;
+  font-weight: 700;
+}
+
+.testimonials-blurb-3 {
+  font-weight: 700;
+}
+
+.testimonials-blurb-2 {
+  font-weight: 700;
+}
+
+.testimonials-quote {
+  position: absolute;
+  width: 1em;
+}
+
+#testimoinals-left-quote-1,
+#testimonials-left-quote-2 {
+  top: -10%;
+  left: -3%;
+}
+
+#testimoinals-right-quote-1 {
+  right: 20%;
+}
+
+#testimonials-right-quote-2 {
+  right: 18%;
+}
+
+#testimonials-left-quote-3,
+#testimonials-right-quote-3 {
+  position: relative;
+  width: 1em;
+}
+
+#testimonials-left-quote-3 {
+  left: -1%;
+}
+
+#testimonials-right-quote-3 {
+  right: -1%;
+}
+
+.testimonials-quoter {
+  text-align: right;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.testimonials-row-2 {
+  text-align: center;
+}
+
+#testimonals-quoter-3 {
+  text-align: center;
+}
+
 .our-partners-row {
   font-size: 1.3em;
+}
+
+.page-footer {
+  background: #007dc3;
+  color: white;
+  width: 100%;
 }
 
 /*Tablet Styling*/
