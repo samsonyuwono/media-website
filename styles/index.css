@@ -341,11 +341,11 @@ input:-ms-input-placeholder {
 }
 
 #testimoinals-right-quote-1 {
-  right: 20%;
+  right: 27%;
 }
 
 #testimonials-right-quote-2 {
-  right: 18%;
+  right: 24%;
 }
 
 #testimonials-left-quote-3,
@@ -409,6 +409,10 @@ input:-ms-input-placeholder {
   color: #fff;
   border-color: #ffffff;
   border-radius: 0;
+}
+
+.input-group-btn .btn {
+  background-color: white;
 }
 
 /* .btn:hover {
@@ -519,6 +523,12 @@ input:-ms-input-placeholder {
 #content {
   height: 44px;
 }
+
+.btn-info:focus {
+  background-color: #007dc3;
+}
+
+/* end sidebar */
 /*Tablet Styling*/
 @media only screen and (max-device-width: 1366px) {
   .banner-text {
