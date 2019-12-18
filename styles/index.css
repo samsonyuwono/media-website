@@ -42,6 +42,11 @@ input:-ms-input-placeholder {
   color: #fff !important;
 }
 
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .row {
   margin: 50px 15px;
   padding: 20px 0;
@@ -61,12 +66,22 @@ input:-ms-input-placeholder {
   /* border: 2px solid red; */
   display: flex;
   align-items: center;
-  justify-content: space-around;
+}
+
+.header-logos,
+.header-numbers,
+.header-address,
+.email-address {
+  margin-left: 10px;
 }
 
 .header-logos {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.header-twitter {
+  height: 29px;
 }
 
 .top-bar-col p {
@@ -82,8 +97,9 @@ input:-ms-input-placeholder {
   width: 100%;
 }
 
-.banner-img-col {
-  /* border: 2px solid red; */
+.banner-img-col,
+.footer-container {
+  padding: 0 !important;
 }
 
 .banner-text {
@@ -143,6 +159,11 @@ input:-ms-input-placeholder {
   margin-top: 30px;
 }
 
+.solutions-quote {
+  text-align: center;
+  font-style: italic;
+}
+
 .our-solutions-img {
   display: flex;
   align-items: center;
@@ -178,6 +199,10 @@ input:-ms-input-placeholder {
   background-position: center;
 }
 
+.www-panel-row {
+  margin: 0px 15px;
+}
+
 .www-card {
   text-align: center;
 }
@@ -187,7 +212,7 @@ input:-ms-input-placeholder {
 }
 
 .value-prop-text p {
-  margin-top: 35px;
+  margin-top: 26px;
 }
 
 .physician-network-header {
@@ -294,6 +319,12 @@ input:-ms-input-placeholder {
   font-weight: 700;
 }
 
+.reporting-paragraph {
+  font-size: 0.9em;
+  font-weight: 100;
+  margin-bottom: 28px;
+}
+
 .reporting-quote {
   position: absolute;
   width: 10%;
@@ -301,7 +332,7 @@ input:-ms-input-placeholder {
 
 .left-quote {
   left: -10%;
-  top: 0%;
+  top: 26%;
 }
 
 .right-quote {
@@ -311,6 +342,10 @@ input:-ms-input-placeholder {
 .reporting-footer {
   font-size: 1.2em;
   text-align: center;
+}
+
+.news-title p {
+  font-size: 1.2em;
 }
 
 /* end client value */
@@ -363,7 +398,7 @@ input:-ms-input-placeholder {
 }
 
 .testimonials-quoter {
-  text-align: right;
+  text-align: center;
   font-size: 1.3em;
   font-weight: 700;
 }
@@ -391,10 +426,6 @@ input:-ms-input-placeholder {
   border-right: 1px solid black;
 }
 
-/* .footer-row > div {
-  border: 1px solid grey;
-} */
-
 .footer-column-1 {
   font-size: 0.8em;
 }
@@ -414,10 +445,6 @@ input:-ms-input-placeholder {
 .input-group-btn .btn {
   background-color: white;
 }
-
-/* .btn:hover {
-  color: #007dc3;
-} */
 
 /* sidebar */
 
@@ -454,6 +481,10 @@ input:-ms-input-placeholder {
   padding: 0;
   text-align: left;
   z-index: 1000;
+}
+
+.close-sidebar {
+  display: none;
 }
 
 #sidebar {
@@ -566,8 +597,8 @@ input:-ms-input-placeholder {
 
 /*Phone Styling*/
 @media screen and (max-device-width: 812px), (max-device-height: 375px) {
-  .top-bar-col {
-    flex-direction: column;
+  .top-bar {
+    font-size: 0.25em;
   }
 
   .banner-description {
@@ -576,6 +607,48 @@ input:-ms-input-placeholder {
 
   .about-us-text .our-solutions-text {
     font-size: 0.75em;
+  }
+
+  #sidebar {
+    min-width: unset;
+    max-width: unset;
+    top: 82%;
+  }
+
+  #sidebar.active {
+    width: 100%;
+    margin-left: -812px;
+    opacity: 0.9;
+    top: 0;
+  }
+
+  #sidebar ul li a {
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    width: 42%;
+    margin-left: 30%;
+  }
+
+  #content .navbar {
+    top: 82px;
+    height: 51px;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .close-sidebar {
+    display: block;
+    position: absolute;
+    right: 20%;
+    top: 12%;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: #29abe2;
+    text-align: center;
+    font-size: 2em;
+    line-height: 0.5;
   }
 }
 
@@ -626,11 +699,30 @@ input:-ms-input-placeholder {
     width: 35%;
   }
 
-  #sidebar {
-    margin-left: -250px;
+  .partners-logo-row1,
+  .partners-logo-row2 {
+    margin: 0;
   }
+
+  .partner-column {
+    width: 25%;
+  }
+
+  #logo {
+    width: 67px;
+  }
+
+  #sidebar {
+    top: 0;
+  }
+
   #sidebar.active {
-    margin-left: 0;
+    margin-left: -375px;
+    width: 100%;
+  }
+
+  .close-sidebar {
+    top: 7%;
   }
 }
 

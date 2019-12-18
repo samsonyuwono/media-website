@@ -49,6 +49,7 @@
     <div class="container-fluid my-container">
       <div class="wrapper">
         <nav id="sidebar">
+          <span class="close-sidebar">x</span>
           <ul class="list-unstyled components">
             <div id="content">
               <nav class="navbar navbar-expand-lg navbar-light">
@@ -83,13 +84,13 @@
               <a href="#news">News</a>
             </li>
             <li>
-              <a href="#testimonials">Testimonials</a>
+              <a style="border-bottom: none" href="#testimonials"
+                >Testimonials</a
+              >
             </li>
           </ul>
         </nav>
       </div>
-
-      <div class="overlay"></div>
 
       <div class="row justify-content-center top-bar">
         <div class="col-sm-3 top-bar-col">
@@ -135,7 +136,9 @@
             src="./images/envelope.png"
             alt="envelope"
           />
-          <p>info@healthcastsmedia.com</p>
+          <div class="email-address">
+            <p>info@healthcastsmedia.com</p>
+          </div>
         </div>
       </div>
 
@@ -178,7 +181,7 @@
             <li>
               An established, reliable and trusted peer-to-peer community
             </li>
-            <li>A pure clinically relevant environment</li>
+            <li>A purely clinically relevant environment</li>
             <li>
               Driving superior patient outcomes through shared experiences,
               support and dialogue
@@ -200,7 +203,7 @@
             your brand is where you win.
           </h1>
           <div class="our-solutions-text">
-            <p style="text-align: center">
+            <p class="solutions-quote">
               "We LOVE working your teams &mdash; you guys are always so
               responsive, quick to turn around our requests/changes/etc., and a
               pleasure to work with".
@@ -244,8 +247,8 @@
           <p>
             The key to better doctors is peer-to-peer interaction and
             conversation. Healthcasts Media delivers powerful results for Pharma
-            marketers thorugh an immesive brand experience. Our dynamic
-            marketing capbilities provide intelligent campagin design informed
+            marketers through an immersive brand experience. Our dynamic
+            marketing capabilities provide intelligent campagin design informed
             by real-world insights.
           </p>
         </div>
@@ -291,7 +294,7 @@
           />
           <h1 class="section-header">OUR VALUE PROPOSITION</h1>
           <p>
-            Permission-Based Marketing isthe Foundation for Successful
+            Permission-Based Marketing is the Foundation for Successful
             Interactions with Physicians.
           </p>
           <strong
@@ -323,10 +326,10 @@
           </h1>
           <p class="physician-network-paragraph">
             Our network is comprised of nearly 1 million opted-in and verified
-            HCP's -and is growing. 3.9 million patient-based questions are asked
-            and answered each year. Our strength is providing doctors with a
-            clinically pure environment where they can interact and drive better
-            health outcomes for their patients.
+            HCP's &mdash;and is growing. 3.9 million patient-based questions are
+            asked and answered each year. Our strength is providing doctors with
+            a clinically pure environment where they can interact and drive
+            better health outcomes for their patients.
           </p>
           <p class="physician-network-bold">
             Physician time spent with brands is purposeful and driven by
@@ -388,11 +391,14 @@
             alt="hc-logo-ball"
           />
           <h1>Client Value</h1>
+          <p style="margin-bottom: 1px;">
+            'End to end evidence management' affects both clinical and
+            commercial activities across the entire product life cycle.
+          </p>
           <p>
-            'End to end evidence management affects both clinical and commercial
-            activities across the entire product life cycle. Pharma brands can
-            reach high-value physicians and be part of these important clinical
-            discussions impacting both patient and business outcomes.'
+            Pharma brands can reach high-value physicians and be part of these
+            important clinical discussions impacting both patient and business
+            outcomes.
           </p>
 
           <p class="left blue">
@@ -416,7 +422,10 @@
       <div class="row reporting-row">
         <div class="col-sm-12 reporting-text text-center">
           <h1>Aggregate Reporting</h1>
-
+          <p class="reporting-paragraph">
+            Healthcasts Media provides aggregate reporting in variable cadence
+            during the course of an active campaign.
+          </p>
           <p>
             <img
               class="reporting-quote left-quote"
@@ -630,56 +639,64 @@
         </div>
       </div>
       <div class="row partners-logo-row1">
-        <div class="col-sm-3  align-self-center">
+        <div class="col-sm-3 partner-column align-self-center">
           <img
             class="col-img"
+            id="logo"
             src="./images/partners/Northwestern_Memorial_Healthcare.jpg"
             alt="northwestern healthcare"
           />
         </div>
-        <div class="col-sm-3 align-self-center">
+        <div class="col-sm-3 partner-column align-self-center">
           <img
             class="col-img"
+            id="logo"
             src="./images/partners/MD_anderson.jpg"
             alt="MD anderson"
           />
         </div>
-        <div class="col-sm-3 align-self-center">
+        <div class="col-sm-3  partner-column align-self-center">
           <img class="col-img" src="./images/partners/UPMC.png" alt="UPMC" />
         </div>
-        <div class="col-sm-3 align-self-center">
+        <div class="col-sm-3 partner-column align-self-center">
           <img
             class="col-img"
+            id="logo"
             src="./images/partners/Memorial_Sloan_Kettering.png"
             alt="MSK"
           />
         </div>
       </div>
       <div class="row partners-logo-row2">
-        <div class="col-sm-3  align-self-center">
+        <div class="col-sm-3 partner-column align-self-center">
           <img
             class="col-img"
+            id="logo"
             src="./images/partners/Partners_Healthcare.png"
             alt="partners"
           />
         </div>
-        <div class="col-sm-3 align-self-center">
+        <div class="col-sm-3 partner-column align-self-center">
           <img
+            style="margin-left: 22px"
             class="col-img"
+            id="logo"
             src="./images/partners/Cleveland_Clinic.png"
             alt="cleveland clinic"
           />
         </div>
-        <div class="col-sm-3 align-self-center">
+        <div class="col-sm-3 partner-column align-self-center">
           <img
             class="col-img"
+            id="logo"
             src="./images/partners/NYU_Langone.jpeg"
             alt="nyu langone"
           />
         </div>
-        <div class="col-sm-3 align-self-center">
+        <div class="col-sm-3 partner-column align-self-center">
           <img
             class="col-img"
+            id="logo"
             src="./images/partners/Boston_Childrens_Hospital.jpeg"
             alt="boston childrens"
           />
@@ -687,12 +704,11 @@
       </div>
 
       <div class="card-footer">
-        <div class="container-fluid ">
+        <div class="container-fluid footer-container">
           <div class="row footer-row text-center text-md-left vdivide">
             <div class="col-sm-3 footer-column-1 ">
-              <p>
-                747 Third Avenue | 14th Floor | New York, NY 10017
-              </p>
+              <p>747 Third Avenue | 14th Floor</p>
+              <p>New York, NY 10017</p>
               <div class="footer-info">
                 <p>Email: info@healthcastsmedia.com</p>
                 <p>Phone: 212-545-7298</p>
