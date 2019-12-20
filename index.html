@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -164,14 +165,14 @@
       </div>
 
       <div class="row about-us-row" id="about-us">
-        <div class="col-sm-6 align-self-center aboutus-img-col">
+        <div class="col-xs-4 col-sm-6 align-self-center aboutus-img-col">
           <img
             class="about-us-img col-img"
             src="./images/about-us-img.jpg"
             alt=""
           />
         </div>
-        <div class="col-sm-6 align-self-center about-us-text">
+        <div class="col-xs-4 col-sm-6 align-self-center about-us-text">
           <img
             class="hc-logo-ball"
             src="./images/HC_Media_ball_logo.png"
@@ -181,6 +182,21 @@
           <h1>
             For nearly 20 years, we have been a trusted physician partner.
           </h1>
+          <div class="standard-text-block">
+            <ul class="about-us-list">
+              <li>Building strong and valuable relationships with doctors</li>
+              <li>
+                An established, reliable and trusted peer-to-peer community
+              </li>
+              <li>A purely clinically relevant environment</li>
+              <li>
+                Driving superior patient outcomes through shared experiences,
+                support and dialogue
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-4 mobile-landscape-text mobile-about">
           <ul class="about-us-list">
             <li>Building strong and valuable relationships with doctors</li>
             <li>
@@ -196,7 +212,9 @@
       </div>
 
       <div class="row our-solutions-row">
-        <div class="col-sm-6 col-md-6 align-self-center our-solutions-text">
+        <div
+          class="col-xs-4 col-sm-6 col-md-6 align-self-center our-solutions-text"
+        >
           <img
             class="hc-logo-ball"
             src="./images/HC_Media_ball_logo.png"
@@ -207,7 +225,7 @@
             Having relevant conversations with physicians about your brand is
             where you win.
           </h1>
-          <div class="our-solutions-text">
+          <div class="our-solutions-text standard-text-block">
             <p class="solutions-quote">
               "We LOVE working with your teams &mdash; you guys are always so
               responsive, quick to turn around our requests/changes/etc., and a
@@ -230,7 +248,39 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 align-self-center">
+        <div class="col-xs-4 col-sm-6 align-self-center mobile-landscape-img">
+          <img
+            style="margin-top:"
+            class="our-solutions-img col-img"
+            src="./images/our-solutions-img.jpg"
+            alt="our-solutions-img"
+          />
+        </div>
+        <div class="col-xs-4 mobile-landscape-text">
+          <div class="our-solutions-text ">
+            <p class="solutions-quote">
+              "We LOVE working with your teams &mdash; you guys are always so
+              responsive, quick to turn around our requests/changes/etc., and a
+              pleasure to work with".
+            </p>
+            <p>
+              We provide digital tools and education resources to doctors so
+              they can provide exceptional and knowledgeable healthcare advice
+              to patients and engage in critical conversations with their peers.
+            </p>
+            <div class="our-solutions-footer">
+              <p>
+                At Healthcasts Media, we LOVE our clients and strive to make our
+                partnership as turnkey and seamless as possible.
+              </p>
+              <strong
+                >The Pharma business is hard enough. Wouldn't it be nice to work
+                with a company who makes it easy?</strong
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4 col-sm-6 align-self-center standard-text-block">
           <img
             class="our-solutions-img col-img"
             src="./images/our-solutions-img.jpg"
@@ -311,14 +361,14 @@
       </div>
 
       <div class="row physician-network-row" id="physician-network">
-        <div class="col-sm-6 align-self-center">
+        <div class="col-xs-4 col-sm-6 align-self-center">
           <img
             class="physician-network-img col-img"
             src="./images/physician-network-img.jpg"
             alt="laptop"
           />
         </div>
-        <div class="col-sm-6 physician-network-text">
+        <div class="col-xs-4 col-sm-6 physician-network-text">
           <img
             class="hc-logo-ball"
             src="./images/HC_Media_ball_logo.png"
@@ -336,6 +386,24 @@
             a clinically pure environment where they can interact and drive
             better health outcomes for their patients.
           </p>
+          <div class="standard-text-block">
+            <p class="physician-network-bold">
+              Physician time spent with brands is purposeful and driven by
+              clinical relevance.
+            </p>
+            <p class="survey-paragraph">
+              We recently conducted a survey of our Physician Community. See
+              what our doctors think about us here:
+              <a
+                class="survey-pdf"
+                href="http://healthcastsmedia.com/pdf/DoctorSurvey_HCM.pdf"
+                target="_blank"
+                >view PDF</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-4 mobile-landscape-text">
           <p class="physician-network-bold">
             Physician time spent with brands is purposeful and driven by
             clinical relevance.
@@ -554,7 +622,7 @@
           <p class="testimonials-blurb-1">
             <img
               class="testimonials-quote"
-              id="testimoinals-left-quote-1"
+              id="testimonials-left-quote-1"
               src="./images/quotes-left.png"
               alt="left quote"
             />
@@ -562,7 +630,7 @@
             to a lot of patients. It's easy and straightfoward.
             <img
               class="testimonials-quote right-quote"
-              id="testimoinals-right-quote-1"
+              id="testimonials-right-quote-1"
               src="./images/quotes-right.png"
               alt="right quote"
             />
@@ -604,7 +672,8 @@
               alt="left quote"
             />
             I thorougly enjoy educating my patients about painful conditions
-            that arise. This takes it to a new level.
+            that arise.
+            <span class="second-sentence">This takes it to a new level.</span>
             <img
               class="testimonials-quote"
               id="testimonials-right-quote-3"

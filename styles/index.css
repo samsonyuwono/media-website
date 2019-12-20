@@ -371,13 +371,13 @@ input:-ms-input-placeholder {
   width: 1em;
 }
 
-#testimoinals-left-quote-1,
+#testimonials-left-quote-1,
 #testimonials-left-quote-2 {
   top: -10%;
   left: 4%;
 }
 
-#testimoinals-right-quote-1 {
+#testimonials-right-quote-1 {
   right: 23%;
 }
 
@@ -400,7 +400,7 @@ input:-ms-input-placeholder {
 }
 
 .testimonials-quoter {
-  /* text-align: center; */
+  text-align: center;
   font-size: 1.3em;
   font-weight: 700;
   padding: 0 66px;
@@ -562,6 +562,14 @@ input:-ms-input-placeholder {
   background-color: #007dc3;
 }
 
+.mobile-landscape-text {
+  display: none;
+}
+
+.mobile-landscape-img {
+  display: none;
+}
+
 /* end sidebar */
 /*Tablet Styling*/
 @media only screen and (max-device-width: 1366px) {
@@ -602,7 +610,8 @@ input:-ms-input-placeholder {
 /*Phone Styling*/
 @media screen and (max-device-width: 812px), (max-device-height: 375px) {
   .top-bar {
-    font-size: 0.45em;
+    margin: 0 8px;
+    font-size: 0.6em;
   }
 
   .row {
@@ -621,18 +630,52 @@ input:-ms-input-placeholder {
     top: -12px;
   }
 
-  .our-solutions-img,
+  .text-center h1 {
+    margin-bottom: 13px;
+  }
+
+  /* .our-solutions-img,
   .physician-network-img {
     height: 260px;
-  }
+  } */
 
   .left-quote {
     top: 33%;
   }
 
+  #www-logo-ball {
+    width: 6em;
+  }
+
+  .blue {
+    margin-top: -3px;
+  }
+
   .testimonials-row-1 {
     margin-bottom: -40px;
   }
+
+  .second-sentence {
+    white-space: nowrap;
+  }
+
+  #testimonials-left-quote-1,
+  #testimonials-left-quote-2 {
+    top: -1%;
+    left: 8%;
+  }
+
+  #testimonials-right-quote-1 {
+    right: 35%;
+  }
+
+  #testimonials-right-quote-2 {
+    right: 30%;
+  }
+
+  /* #testimonials-left-quote-1 {
+    left: 10%;
+  } */
 
   #sidebar {
     top: 32%;
@@ -674,6 +717,29 @@ input:-ms-input-placeholder {
     text-align: center;
     font-size: 2em;
     line-height: 0.5;
+  }
+
+  .about-us-img {
+    margin-top: 96px;
+  }
+
+  .mobile-landscape-text {
+    display: block;
+    text-align: center;
+  }
+
+  .mobile-landscape-img {
+    display: block;
+    padding-top: 11%;
+  }
+
+  .mobile-about {
+    margin: 20px auto;
+    text-align: left;
+  }
+
+  .standard-text-block {
+    display: none;
   }
 }
 
@@ -729,16 +795,8 @@ input:-ms-input-placeholder {
     font-size: 7px;
   }
 
-  .text-center h1 {
-    margin-bottom: 13px;
-  }
-
   .value-prop-chart {
     height: 150px;
-  }
-
-  #www-logo-ball {
-    width: 6em;
   }
 
   .about-us-row,
@@ -766,7 +824,7 @@ input:-ms-input-placeholder {
   }
 
   .left-quote {
-    top: 35%;
+    top: 36%;
   }
 
   .link-col {
@@ -788,18 +846,16 @@ input:-ms-input-placeholder {
     text-align: center;
   }
 
-  #testimoinals-left-quote-1,
-  #testimonials-left-quote-2 {
-    top: -1%;
-    left: 8%;
+  #testimonials-left-quote-1 {
+    left: 12%;
   }
 
-  #testimoinals-right-quote-1 {
-    right: 27%;
+  #testimonials-right-quote-1 {
+    right: 30%;
   }
 
   #testimonials-right-quote-2 {
-    right: 32%;
+    right: 32.5%;
   }
 
   .link-img {
@@ -843,5 +899,17 @@ input:-ms-input-placeholder {
 
   .close-sidebar {
     top: 7%;
+  }
+
+  .standard-text-block {
+    display: block;
+  }
+
+  .mobile-landscape-text {
+    display: none;
+  }
+
+  .mobile-landscape-img {
+    display: none;
   }
 }
