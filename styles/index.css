@@ -592,6 +592,11 @@ input:-ms-input-placeholder {
   .footer-column-1 {
     font-size: 0.7em;
   }
+
+  #testimonials-left-quote-1,
+  #testimonials-left-quote-2 {
+    left: 3%;
+  }
 }
 
 @media only screen and (max-device-width: 1366px) and (orientation: portrait) and (min-device-width: 768px) and (orientation: portrait) {
@@ -612,6 +617,14 @@ input:-ms-input-placeholder {
   .top-bar {
     margin: 0 8px;
     font-size: 0.6em;
+  }
+
+  .header-numbers p {
+    white-space: nowrap;
+  }
+
+  .header-address p:first-child {
+    white-space: nowrap;
   }
 
   .row {
@@ -666,11 +679,11 @@ input:-ms-input-placeholder {
   }
 
   #testimonials-right-quote-1 {
-    right: 35%;
+    right: 31%;
   }
 
   #testimonials-right-quote-2 {
-    right: 30%;
+    right: 18%;
   }
 
   /* #testimonials-left-quote-1 {
@@ -740,6 +753,10 @@ input:-ms-input-placeholder {
 
   .standard-text-block {
     display: none;
+  }
+
+  .aco-partnership {
+    margin-bottom: 0px;
   }
 }
 
@@ -855,7 +872,7 @@ input:-ms-input-placeholder {
   }
 
   #testimonials-right-quote-2 {
-    right: 32.5%;
+    right: 18.5%;
   }
 
   .link-img {
@@ -913,3 +930,9 @@ input:-ms-input-placeholder {
     display: none;
   }
 }
+
+/* @media screen and (max-device-width: 812px) and (orientation: portrait),
+  (max-device-height: 375px) and (orientation: portrait) {
+  #testimonials-left-quote-1 {
+  }
+} */
