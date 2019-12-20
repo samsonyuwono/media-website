@@ -7,7 +7,12 @@ $(document).ready(function() {
     $("#sidebar").toggleClass("active");
   });
 
+  $(".select-section").on("click", function() {
+    $("#sidebar").removeClass("active");
+  });
+
   $(".close-sidebar").on("click", function() {
+    console.log("close");
     $("#sidebar").removeClass("active");
   });
 });

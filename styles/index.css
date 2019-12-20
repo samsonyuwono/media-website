@@ -45,6 +45,7 @@ input:-ms-input-placeholder {
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
+  overflow-x: hidden;
 }
 
 .row {
@@ -111,7 +112,7 @@ input:-ms-input-placeholder {
   position: absolute;
   top: 40%;
   width: 50%;
-  margin: 0px 0 0 20px;
+  margin: 0px 0 0 40px;
 }
 
 .banner-text h1 {
@@ -354,6 +355,7 @@ input:-ms-input-placeholder {
 .testimonials-blurb-2 {
   width: 80%;
   font-weight: 700;
+  padding-left: 40px;
 }
 
 .testimonials-blurb-3 {
@@ -372,15 +374,15 @@ input:-ms-input-placeholder {
 #testimoinals-left-quote-1,
 #testimonials-left-quote-2 {
   top: -10%;
-  left: -3%;
+  left: 4%;
 }
 
 #testimoinals-right-quote-1 {
-  right: 27%;
+  right: 23%;
 }
 
 #testimonials-right-quote-2 {
-  right: 24%;
+  right: 19%;
 }
 
 #testimonials-left-quote-3,
@@ -398,9 +400,10 @@ input:-ms-input-placeholder {
 }
 
 .testimonials-quoter {
-  text-align: center;
+  /* text-align: center; */
   font-size: 1.3em;
   font-weight: 700;
+  padding: 0 66px;
 }
 
 .our-partners-row {
@@ -562,6 +565,10 @@ input:-ms-input-placeholder {
 /* end sidebar */
 /*Tablet Styling*/
 @media only screen and (max-device-width: 1366px) {
+  .header-logos {
+    display: flex;
+  }
+
   .banner-text {
     top: 13%;
   }
@@ -581,12 +588,9 @@ input:-ms-input-placeholder {
 
 @media only screen and (max-device-width: 1366px) and (orientation: portrait) and (min-device-width: 768px) and (orientation: portrait) {
   .top-bar-col {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
-  .top-bar-col {
-    flex-direction: column;
-  }
   .banner-text h1 {
     font-size: 2.2em;
   }
@@ -598,7 +602,11 @@ input:-ms-input-placeholder {
 /*Phone Styling*/
 @media screen and (max-device-width: 812px), (max-device-height: 375px) {
   .top-bar {
-    font-size: 0.25em;
+    font-size: 0.45em;
+  }
+
+  .row {
+    margin-bottom: 10px;
   }
 
   .banner-description {
@@ -609,15 +617,32 @@ input:-ms-input-placeholder {
     font-size: 0.75em;
   }
 
+  .aboutus-img-col {
+    top: -12px;
+  }
+
+  .our-solutions-img,
+  .physician-network-img {
+    height: 260px;
+  }
+
+  .left-quote {
+    top: 33%;
+  }
+
+  .testimonials-row-1 {
+    margin-bottom: -40px;
+  }
+
   #sidebar {
-    min-width: unset;
-    max-width: unset;
-    top: 82%;
+    top: 32%;
   }
 
   #sidebar.active {
-    width: 100%;
-    margin-left: -812px;
+    min-width: unset;
+    max-width: unset;
+    width: 830px;
+    margin-left: -815px;
     opacity: 0.9;
     top: 0;
   }
@@ -630,7 +655,7 @@ input:-ms-input-placeholder {
   }
 
   #content .navbar {
-    top: 82px;
+    top: 4.5em;
     height: 51px;
     border-top: 0;
     border-bottom: 0;
@@ -654,14 +679,45 @@ input:-ms-input-placeholder {
 
 @media screen and (max-device-width: 767px) and (orientation: portrait),
   (max-device-height: 375px) and (orientation: portrait) {
+  h1 {
+    text-align: center;
+  }
+
   .top-bar-col {
-    flex-direction: row;
+    flex-direction: column;
     margin: 5px 0px;
+    justify-content: center;
+    width: 34%;
+  }
+
+  .top-bar img {
+    padding-bottom: 10px;
+  }
+
+  .hc-logo {
+    width: 150px;
+  }
+
+  .hc-logo-ball {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .header-logos {
+    display: block;
+  }
+
+  .header-twitter {
+    height: 38px;
+  }
+
+  .address-column {
+    width: 30%;
   }
 
   .banner-text {
-    width: 60%;
-    top: 8%;
+    width: 45%;
+    top: 28%;
   }
 
   .banner-text h1 {
@@ -673,17 +729,44 @@ input:-ms-input-placeholder {
     font-size: 7px;
   }
 
+  .text-center h1 {
+    margin-bottom: 13px;
+  }
+
   .value-prop-chart {
     height: 150px;
   }
 
-  .news-banner-row {
+  #www-logo-ball {
+    width: 6em;
+  }
+
+  .about-us-row,
+  .value-prop-row,
+  .physician-network-row {
+    flex-direction: column-reverse;
+  }
+
+  .client-value-text {
+    width: 100%;
+  }
+
+  .news-row {
     display: none;
+  }
+
+  .news-banner-col,
+  .mobilenews-banner-col {
+    padding: 0;
   }
 
   .mobile-news-banner {
     display: block;
     margin: 0px 0px;
+  }
+
+  .left-quote {
+    top: 35%;
   }
 
   .link-col {
@@ -692,9 +775,33 @@ input:-ms-input-placeholder {
     margin: 12px 6px;
   }
 
+  .news-title {
+    margin-bottom: -40px;
+  }
+
   .news-links {
     margin: 0;
   }
+
+  .testimonials-blurb-1,
+  .testimonials-blurb-2 {
+    text-align: center;
+  }
+
+  #testimoinals-left-quote-1,
+  #testimonials-left-quote-2 {
+    top: -1%;
+    left: 8%;
+  }
+
+  #testimoinals-right-quote-1 {
+    right: 27%;
+  }
+
+  #testimonials-right-quote-2 {
+    right: 32%;
+  }
+
   .link-img {
     width: 35%;
   }
@@ -708,12 +815,25 @@ input:-ms-input-placeholder {
     width: 25%;
   }
 
+  .footer-column-1,
+  .footer-column-2 {
+    margin-bottom: 35px;
+  }
+
+  .footer-column-1 {
+    font-size: 1em;
+  }
+
   #logo {
     width: 67px;
   }
 
-  #sidebar {
+  #content .navbar {
     top: 0;
+  }
+
+  #sidebar {
+    top: 1%;
   }
 
   #sidebar.active {
@@ -725,31 +845,3 @@ input:-ms-input-placeholder {
     top: 7%;
   }
 }
-
-/* @media (max-device-width: 576px) {
-}
-
-@media (max-device-width: 768px) {
-}
-
-@media (max-device-width: 992px) {
-  .top-bar-col {
-    flex-direction: column;
-  }
-
-  .top-bar-col {
-    flex-direction: column;
-  }
-  .banner-text h1 {
-    font-size: 2em;
-  }
-  .banner-text {
-    top: 13%;
-  }
-}
-
-@media (max-device-width: 1200px) {
-  .top-bar-col {
-    flex-direction: column;
-  }
-} */
